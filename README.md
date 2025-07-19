@@ -1,16 +1,48 @@
-# contest
+# 🌆 Smart City App
 
-A new Flutter project.
+A modern, location-aware Flutter application designed to help users explore city services, news, and places using an intuitive interface. Integrates map functionality and real-time news to create a smarter urban experience.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🗺️ **OpenStreetMap Integration**  
+  View city landmarks, services, and navigation on an interactive map.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 📰 **Live City News Feed**  
+  Stay up to date with real-time news fetched via API integration.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- 📍 **Location-Based Information**  
+  Detect and display your current location with useful details.
+
+- 🎨 **Modern & Responsive UI**  
+  Visually appealing design optimized for both Android and iOS.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: Flutter (Dart)
+- **Map Integration**: `flutter_map` package with OpenStreetMap
+- **News Integration**: [NewsAPI.org](https://newsapi.org) – for fetching city news (`/v2/everything?q=Gwalior`)
+- **IDE**: Android Studio / VS Code
+
+---
+
+## 📡 NewsAPI Integration
+
+This Flutter app uses [NewsAPI.org](https://newsapi.org) to fetch real-time news based on a city query (`q=Gwalior`).
+
+### 🔐 API Key Setup
+
+To securely use the News API without exposing your key:
+
+1. **Sign up** at [https://newsapi.org](https://newsapi.org) and get your **API key**.
+2. Create a file named `secrets.dart` inside your `lib/` folder.
+
+```dart
+// lib/secrets.dart
+const String newsApiKey = "YOUR_API_KEY_HERE";
+import 'secrets.dart';
+# .gitignore
+lib/secrets.dart
