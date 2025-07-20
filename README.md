@@ -44,5 +44,6 @@ To securely use the News API without exposing your key:
 // lib/secrets.dart
 const String newsApiKey = "YOUR_API_KEY_HERE";
 import 'secrets.dart';
+
 # .gitignore
 lib/secrets.dart
